@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://devtools-hub.vercel.app"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://devtools-hub.example.com"),
   title: {
     template: "%s | DevTools Hub",
     default: "DevTools Hub - Free Online Developer Tools",
